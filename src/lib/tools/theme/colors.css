@@ -44,7 +44,7 @@
 :root.tn-theme-light {
   --color-background-main: var(--color-white);
   --color-background-main-inverse: var(--color-black);
-  --color-background-secondary: #e7ebee;
+  --color-background-secondary: #eff1f5;
   --color-text-main: var(--color-black);
   --color-text-main-inverse: var(--color-white);
   --color-text-highlight: #fbe384;
