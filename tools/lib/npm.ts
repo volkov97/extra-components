@@ -20,13 +20,13 @@ export function npmMajor() {
 }
 
 export function npmPublishLatest() {
-  execSync('npm publish', {
+  execSync('npm publish --access=public', {
     cwd: path.resolve(process.cwd(), 'build'),
   });
 }
 
 export function npmPublishBeta(version: string) {
-  execSync(`npm publish --tag version-${version}`, {
+  execSync(`npm publish --access=public --tag version-${version}`, {
     cwd: path.resolve(process.cwd(), 'build'),
   });
 }
