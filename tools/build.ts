@@ -24,8 +24,6 @@ function createLightPackageJSONForTreeShaking() {
     sideEffects: ['*.css'],
   };
 
-  fs.writeFileSync('build/icons/package.json', JSON.stringify(content, null, 2), { encoding: 'utf8' });
-
   fs.writeFileSync('build/components/package.json', JSON.stringify(content, null, 2), { encoding: 'utf8' });
 }
 
