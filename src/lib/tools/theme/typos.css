@@ -1,4 +1,6 @@
 :root {
+  font-family: 'Open Sans', sans-serif;
+
   /* font-size */
   --size-typo-xs: 12px;
   --size-typo-s: 14px;
