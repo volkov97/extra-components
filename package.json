@@ -1,6 +1,6 @@
 {
   "name": "@tech-notes/web-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tech Notes Web Components",
   "main": "index.js",
   "scripts": {
