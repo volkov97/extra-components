@@ -1,0 +1,20 @@
+# gitignore without builds
+.out
+node_modules
+
+# folders
+src
+tools
+.storybook
+public
+
+# files
+webpack*
+tsconfig*
+.style*
+.prettier*
+.lintstaged*
+.huskyrc*
+.eslint*
+.editorconfig*
+jest*

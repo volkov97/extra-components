@@ -1,0 +1,10 @@
+.vscode
+.idea
+
+public
+dist
+node_modules
+build
+build-*
+
+*.json
