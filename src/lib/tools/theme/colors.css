@@ -1,0 +1,75 @@
+:root {
+  --color-black: #000;
+  --color-black-background: #121212;
+  --color-charcoal-grey: #434445;
+  --color-steel: #7f8285;
+  --color-cloudy-blue: #b8bec3;
+  --color-ice-blue: #f0f2f3;
+  --color-very-light-gray: #faf8f5;
+  --color-white: #fff;
+  --color-red-light: #ffc0be;
+  --color-red-semilight: #f66;
+  --color-red: #f33;
+  --color-red-dark: #e00000;
+  --color-pink-light: #fcc0e1;
+  --color-pink-semilight: #f858af;
+  --color-pink: #f62e9b;
+  --color-pink-dark: #d62887;
+  --color-orange-light: #ffe0b2;
+  --color-orange-semilight: #ffae33;
+  --color-orange: #ff9a00;
+  --color-orange-dark: #e68b00;
+  --color-yellow-light: #fff1ba;
+  --color-yellow-semilight: #ffdb47;
+  --color-yellow: #fc0;
+  --color-yellow-dark: #e7ab19;
+  --color-azure-light: #b9d8fe;
+  --color-azure-semilight: #3a92fd;
+  --color-azure: #07f;
+  --color-azure-dark: #0065d9;
+  --color-blue-light: #cff0fd;
+  --color-blue-semilight: #7fd8fa;
+  --color-blue: #2079c0;
+  --color-blue-dark: #005ba4;
+  --color-green-light: #baeac9;
+  --color-green-semilight: #47c971;
+  --color-green: #00b341;
+  --color-green-dark: #008c33;
+  --color-lime-light: #c7f2df;
+  --color-lime-semilight: #6addab;
+  --color-lime: #45d496;
+  --color-lime-dark: #33b27b;
+}
+
+:root.tn-theme-light {
+  --color-background-main: var(--color-white);
+  --color-background-main-inverse: var(--color-black);
+  --color-background-secondary: #e7ebee;
+  --color-text-main: var(--color-black);
+  --color-text-main-inverse: var(--color-white);
+  --color-text-highlight: #fbe384;
+  --color-link-main: var(--color-blue);
+  --color-attention-main: var(--color-red);
+  --color-attention-dark: var(--color-red-dark);
+  --color-border-main: var(--color-cloudy-blue);
+  --color-border-dark: var(--color-steel);
+}
+
+:root.tn-theme-dark {
+  /* https://colorhunt.co/palette/179373 */
+  --color-background-main: #222831;
+  --color-background-main-inverse: var(--color-white);
+  --color-background-secondary: #30475e;
+  --color-text-main: #ececec;
+  --color-text-main-inverse: var(--color-black);
+  --color-text-highlight: #9a691e;
+  --color-link-main: #3282b8;
+  --color-attention-main: #cf6679;
+  --color-attention-dark: var(--color-red-dark);
+  --color-border-main: var(--color-cloudy-blue);
+  --color-border-dark: var(--color-steel);
+}
+
+:root.tn-theme-dark img {
+  opacity: 0.8;
+}

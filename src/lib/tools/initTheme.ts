@@ -1,15 +1,10 @@
-import './theme/mixins.css';
+import './theme/colors.css';
+import './theme/sizes.css';
+import './theme/typos.css';
 
-const { log } = console;
+export const initTheme = (isDark = false) => {
+  document.body.classList.remove('tn-theme-light');
+  document.body.classList.remove('tn-theme-dark');
 
-export const theme = {
-  color: 'tn',
-  capacity: 'tn',
-  space: 'tn',
-  cosmetic: 'tn',
-  size: 'tn',
-};
-
-export const initTheme = () => {
-  log('inited theme');
+  document.body.classList.add(isDark ? 'tn-theme-dark' : 'tn-theme-light');
 };
