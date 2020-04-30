@@ -4,21 +4,17 @@ import { publish } from 'gh-pages';
 
 const { log, error } = console;
 
-const link = 'https://pages.github.com/volkov97/components-web/';
+const link = 'https://pages.github.com/volkov97/slim-components/';
 
 const showcasePath = path.resolve(process.cwd(), '.out');
 
-const { BRANCH_NAME } = process.env;
-
-const repo = 'https://github.com/tech-notes/components-web.git';
-
-log(BRANCH_NAME, repo);
+const repo = 'https://github.com/volkov97/slim-components.git';
 
 if (fs.existsSync(showcasePath)) {
   publish(
     showcasePath,
     {
-      dest: BRANCH_NAME || 'default',
+      dest: 'default',
       repo,
     },
     err => {
