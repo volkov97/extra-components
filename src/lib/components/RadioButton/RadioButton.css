@@ -1,0 +1,19 @@
+.tn-radiobutton {
+  display: flex;
+}
+
+.tn-radiobutton__item {
+  position: relative;
+  margin-left: -1px;
+}
+
+.tn-radiobutton__item:hover,
+.tn-radiobutton__item_active {
+  z-index: 100;
+}
+
+.tn-radiobutton .tn-button_active:hover,
+.tn-radiobutton .tn-button_active:focus {
+  color: var(--color-text-main-inverse);
+  background-color: var(--color-background-main-inverse);
+}

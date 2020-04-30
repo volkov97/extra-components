@@ -1,16 +1,15 @@
 import './Button.css';
 
-import React, { PropsWithChildren, ReactElement } from 'react';
-import { Link, LinkProps } from 'react-router-dom';
+import React from 'react';
 
 import cn from 'classnames';
 import b_ from 'b_';
 
 const b = b_.lock('tn-button');
 
-type ButtonSize = 's' | 'm' | 'l';
-type CornerType = 'circle' | 'round' | 'square';
-type ButtonCorners = [CornerType, CornerType, CornerType, CornerType];
+export type ButtonSize = 's' | 'm' | 'l';
+export type CornerType = 'circle' | 'round' | 'square';
+export type ButtonCorners = [CornerType, CornerType, CornerType, CornerType];
 
 interface CustomButtonProps {
   className?: string;
