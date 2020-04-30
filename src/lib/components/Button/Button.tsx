@@ -9,11 +9,14 @@ import b_ from 'b_';
 const b = b_.lock('tn-button');
 
 type ButtonSize = 's' | 'm' | 'l';
+type CornerType = 'circle' | 'round' | 'square';
+type ButtonCorners = [CornerType, CornerType, CornerType, CornerType];
 
 interface CustomButtonProps {
   className?: string;
   size?: ButtonSize;
-  isActive?: boolean;
+  theme?: 'active' | 'disabled';
+  corners?: ButtonCorners;
 }
 
 interface ButtonTypeButtonProps extends React.ComponentProps<'button'>, CustomButtonProps {
@@ -30,12 +33,19 @@ interface ButtonCustomProps extends CustomButtonProps {
 
 type ButtonProps = ButtonTypeButtonProps | ButtonTypeLinkProps | ButtonCustomProps;
 
+const defaultCorners: ButtonCorners = ['round', 'round', 'round', 'round'];
+
 export const Button: React.FC<ButtonProps> = props => {
-  const { className, size, isActive, as, ...restProps } = props;
+  const { className, size, theme, as, corners = defaultCorners, ...restProps } = props;
 
   const bemClassnames = b({
     size: size || 'm',
-    active: !!isActive,
+    active: theme === 'active',
+    disabled: theme === 'disabled',
+    'corner-top-left': corners[0],
+    'corner-top-right': corners[1],
+    'corner-bottom-right': corners[2],
+    'corner-bottom-left': corners[3],
   });
 
   const cls = cn(bemClassnames, 'button-reset', className);

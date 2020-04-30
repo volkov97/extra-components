@@ -41,7 +41,7 @@ export const Active = () => (
       </Button>
     </div>
     <div style={{ marginBottom: 10 }}>
-      <Button as="button" onClick={e('clicked')} isActive={true}>
+      <Button as="button" theme="active" onClick={e('clicked')}>
         Active
       </Button>
     </div>
@@ -56,13 +56,33 @@ export const Links = () => (
       </Button>
     </div>
     <div style={{ marginBottom: 10 }}>
-      <Button as="a" onClick={e('clicked')} href="#" target="_blank" isActive={true}>
+      <Button as="a" theme="active" onClick={e('clicked')} href="#" target="_blank">
         Link
       </Button>
     </div>
     <div style={{ marginBottom: 10 }}>
       <Button as="a" size="s" href="#" target="_blank">
         Link
+      </Button>
+    </div>
+  </React.Fragment>
+);
+
+export const Disabled = () => (
+  <React.Fragment>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" theme="disabled" size="l">
+        Disabled action
+      </Button>
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" theme="disabled" size="m">
+        Disabled action
+      </Button>
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" theme="disabled" size="s">
+        Disabled action
       </Button>
     </div>
   </React.Fragment>
@@ -98,5 +118,51 @@ export const ReactRouterLinks = () => (
         </Switch>
       </div>
     </BrowserRouter>
+  </React.Fragment>
+);
+
+export const Corners = () => (
+  <React.Fragment>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" corners={['square', 'round', 'round', 'round']}>
+        Left top
+      </Button>
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" corners={['round', 'square', 'round', 'round']}>
+        Left top
+      </Button>
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" corners={['round', 'round', 'square', 'round']}>
+        Left top
+      </Button>
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" corners={['round', 'round', 'round', 'square']}>
+        Left top
+      </Button>
+    </div>
+
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" corners={['circle', 'round', 'round', 'round']}>
+        Left top
+      </Button>
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" corners={['round', 'circle', 'round', 'round']}>
+        Left top
+      </Button>
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" corners={['round', 'round', 'circle', 'round']}>
+        Left top
+      </Button>
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Button as="button" corners={['round', 'round', 'round', 'circle']}>
+        Left top
+      </Button>
+    </div>
   </React.Fragment>
 );
