@@ -1,0 +1,23 @@
+.tn-textlink {
+  position: relative;
+  color: var(--color-link-main);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.tn-textlink.active,
+.tn-textlink:focus,
+.tn-textlink:hover {
+  outline: none;
+  color: var(--color-attention-main);
+}
+
+.tn-textlink_underline span {
+  border-bottom: var(--border-width-s) solid var(--color-link-main);
+}
+
+.tn-textlink_underline.active span,
+.tn-textlink_underline:focus span,
+.tn-textlink_underline:hover span {
+  border-bottom: var(--border-width-s) solid var(--color-attention-main);
+}
