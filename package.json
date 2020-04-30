@@ -1,5 +1,5 @@
 {
-  "name": "@tech-notes/web-components",
+  "name": "slim-components",
   "version": "0.0.9",
   "description": "Tech Notes Web Components",
   "main": "index.js",
