@@ -1,3 +1,4 @@
+import './theme/body.css';
 import './theme/fonts.css';
 import './theme/typos.css';
 import './theme/colors.css';

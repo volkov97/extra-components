@@ -1,0 +1,7 @@
+body {
+  min-width: 320px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--size-typo-m);
+  line-height: var(--line-height-typo-m);
+  color: var(--color-text-main);
+}
