@@ -4,7 +4,7 @@ UI components library.
 
 ## Stand
 
-[Here](#) you can get a stand with all components.
+[Here](https://volkov97.github.io/extra-components/default/) you can get a stand with all components.
 
 **Are you using ts-loader?**
 
