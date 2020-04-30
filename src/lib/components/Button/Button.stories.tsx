@@ -10,7 +10,7 @@ initTheme();
 
 export default {
   component: Button,
-  title: 'Core/Button',
+  title: 'Components/Button',
 };
 
 export const Sizes = () => (

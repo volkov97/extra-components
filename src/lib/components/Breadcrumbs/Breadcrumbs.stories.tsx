@@ -10,7 +10,7 @@ initTheme();
 
 export default {
   component: Breadcrumbs,
-  title: 'Core/Breadcrumbs',
+  title: 'Components/Breadcrumbs',
 };
 
 export const Default = () => (

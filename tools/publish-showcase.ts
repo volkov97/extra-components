@@ -4,11 +4,11 @@ import { publish } from 'gh-pages';
 
 const { log, error } = console;
 
-const link = 'https://pages.github.com/volkov97/slim-components/';
+const link = 'https://pages.github.com/volkov97/extra-components/';
 
 const showcasePath = path.resolve(process.cwd(), '.out');
 
-const repo = 'https://github.com/volkov97/slim-components.git';
+const repo = 'https://github.com/volkov97/extra-components.git';
 
 if (fs.existsSync(showcasePath)) {
   publish(

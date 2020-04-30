@@ -13,13 +13,13 @@ interface BreadcrumbsProps {
 
 export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
   return (
-    <div className="tn-breadcrumbs">
+    <div className="ec-breadcrumbs">
       {items.map((item, index) => (
-        <div className="tn-breadcrumbs__item" key={item.id}>
-          <div className="tn-breadcrumbs__content">{item.content}</div>
+        <div className="ec-breadcrumbs__item" key={item.id}>
+          <div className="ec-breadcrumbs__content">{item.content}</div>
 
           {index !== items.length - 1 ? (
-            <div className="tn-breadcrumbs__arrow">
+            <div className="ec-breadcrumbs__arrow">
               <ArrowIcon />
             </div>
           ) : null}

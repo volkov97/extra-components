@@ -41,7 +41,7 @@
   --color-lime-dark: #33b27b;
 }
 
-:root.tn-theme-light {
+:root.ec-theme-light {
   --color-background-main: var(--color-white);
   --color-background-main-inverse: var(--color-black);
   --color-background-secondary: #eff1f5;
@@ -55,7 +55,7 @@
   --color-border-dark: var(--color-steel);
 }
 
-:root.tn-theme-dark {
+:root.ec-theme-dark {
   /* https://colorhunt.co/palette/179373 */
   --color-background-main: #222831;
   --color-background-main-inverse: var(--color-white);
@@ -70,6 +70,6 @@
   --color-border-dark: var(--color-steel);
 }
 
-:root.tn-theme-dark img {
+:root.ec-theme-dark img {
   opacity: 0.8;
 }

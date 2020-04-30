@@ -9,7 +9,7 @@ initTheme();
 
 export default {
   component: TextLink,
-  title: 'Core/TextLink',
+  title: 'Components/TextLink',
 };
 
 export const Default = () => (

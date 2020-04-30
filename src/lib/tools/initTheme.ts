@@ -5,8 +5,8 @@ import './theme/sizes.css';
 import './theme/mixins.css';
 
 export const initTheme = (isDark = false) => {
-  document.documentElement.classList.remove('tn-theme-light');
-  document.documentElement.classList.remove('tn-theme-dark');
+  document.documentElement.classList.remove('ec-theme-light');
+  document.documentElement.classList.remove('ec-theme-dark');
 
-  document.documentElement.classList.add(isDark ? 'tn-theme-dark' : 'tn-theme-light');
+  document.documentElement.classList.add(isDark ? 'ec-theme-dark' : 'ec-theme-light');
 };

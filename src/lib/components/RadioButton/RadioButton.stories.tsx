@@ -8,7 +8,7 @@ initTheme();
 
 export default {
   component: RadioButton,
-  title: 'Core/RadioButton',
+  title: 'Components/RadioButton',
 };
 
 export const Default = () => (
