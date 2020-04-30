@@ -27,8 +27,8 @@ export const Default = () => (
             ),
           },
           { id: 'tricks', content: 'Tricks' },
-          { id: 'home', content: 'Cool' },
-          { id: 'tricks', content: 'Element from point' },
+          { id: 'home-one', content: 'Cool' },
+          { id: 'tricks-two', content: 'Element from point' },
         ]}
       />
     </div>

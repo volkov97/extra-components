@@ -2,6 +2,6 @@ body {
   min-width: 320px;
   font-family: 'Open Sans', sans-serif;
   font-size: var(--size-typo-m);
-  line-height: var(--line-height-typo-m);
+  line-height: var(--line-height-typo-l);
   color: var(--color-text-main);
 }
