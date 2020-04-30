@@ -4,7 +4,7 @@ UI components library.
 
 ## Stand
 
-Here you can get a stand with all components [вот здесь](#).
+[Here](#) you can get a stand with all components.
 
 **Are you using ts-loader?**
 
@@ -20,7 +20,7 @@ const tsImportPluginFactory = require('ts-import-plugin');
     getCustomTransformers: () => ({
       before: [
         tsImportPluginFactory({
-          libraryName: '@tech-notes/web-components',
+          libraryName: 'slim-components',
           libraryDirectory: name => `components/${name}`,
           camel2DashComponentName: false,
           transformToDefaultImport: false,
