@@ -20,7 +20,7 @@ const tsImportPluginFactory = require('ts-import-plugin');
     getCustomTransformers: () => ({
       before: [
         tsImportPluginFactory({
-          libraryName: 'extra-components',
+          libraryName: 'extra-ui',
           libraryDirectory: name => `components/${name}`,
           camel2DashComponentName: false,
           transformToDefaultImport: false,
