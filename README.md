@@ -1,10 +1,10 @@
-# Tech Notes UI Components
+# Extra UI
 
-UI components library.
+UI components and tools based on React.
 
 ## Stand
 
-[Here](https://volkov97.github.io/extra-components/default/) you can get a stand with all components.
+[Here](https://extra-ui.now.sh/) you can get a stand with all components.
 
 **Are you using ts-loader?**
 
