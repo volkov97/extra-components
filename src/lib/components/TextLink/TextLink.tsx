@@ -5,7 +5,7 @@ import React from 'react';
 import cn from 'classnames';
 import b_ from 'b_';
 
-const b = b_.lock('ec-textlink');
+const b = b_.lock('eui-textlink');
 
 interface TextLinkProps extends React.ComponentProps<'a'> {
   hasUnderline?: boolean;

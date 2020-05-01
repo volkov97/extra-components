@@ -12,10 +12,7 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "importHelpers": true,
-    "paths": {
-      "src/*": ["src/*"]
-    }
+    "importHelpers": true
   },
   "include": ["src"]
 }

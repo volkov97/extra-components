@@ -2,7 +2,7 @@ import './Breadcrumbs.css';
 
 import React from 'react';
 
-import { ArrowIcon } from './components/ArrowIcon';
+import { RightArrowIcon } from '../../icons/RightArrowIcon';
 
 interface BreadcrumbsProps {
   items: {
@@ -13,14 +13,14 @@ interface BreadcrumbsProps {
 
 export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
   return (
-    <div className="ec-breadcrumbs">
+    <div className="eui-breadcrumbs">
       {items.map((item, index) => (
-        <div className="ec-breadcrumbs__item" key={item.id}>
-          <div className="ec-breadcrumbs__content">{item.content}</div>
+        <div className="eui-breadcrumbs__item" key={item.id}>
+          <div className="eui-breadcrumbs__content">{item.content}</div>
 
           {index !== items.length - 1 ? (
-            <div className="ec-breadcrumbs__arrow">
-              <ArrowIcon />
+            <div className="eui-breadcrumbs__arrow">
+              <RightArrowIcon />
             </div>
           ) : null}
         </div>

@@ -7,7 +7,7 @@ import b_ from 'b_';
 
 import { Button, ButtonCorners, ButtonSize } from '../Button';
 
-const b = b_.lock('ec-radiobutton');
+const b = b_.lock('eui-radiobutton');
 
 interface RadioButtonProps {
   size?: ButtonSize;

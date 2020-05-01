@@ -5,7 +5,7 @@ import React from 'react';
 import cn from 'classnames';
 import b_ from 'b_';
 
-const b = b_.lock('ec-button');
+const b = b_.lock('eui-button');
 
 export type ButtonSize = 's' | 'm' | 'l';
 export type CornerType = 'circle' | 'round' | 'square';

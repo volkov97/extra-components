@@ -1,23 +1,23 @@
-.ec-breadcrumbs {
+.eui-breadcrumbs {
   display: flex;
 }
 
-.ec-breadcrumbs__item {
+.eui-breadcrumbs__item {
   display: flex;
   align-items: center;
   margin-right: 5px;
 }
 
-.ec-breadcrumbs__content {
+.eui-breadcrumbs__content {
   margin-right: 5px;
 }
 
-.ec-breadcrumbs__arrow {
+.eui-breadcrumbs__arrow {
   font-size: 0;
   line-height: 0;
 }
 
-.ec-breadcrumbs__arrow svg {
+.eui-breadcrumbs__arrow svg {
   width: 12px;
   height: 12px;
   fill: var(--color-border-dark);

@@ -1,23 +1,23 @@
-.ec-textlink {
+.eui-textlink {
   position: relative;
   color: var(--color-link-main);
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.ec-textlink.active,
-.ec-textlink:focus,
-.ec-textlink:hover {
+.eui-textlink.active,
+.eui-textlink:focus,
+.eui-textlink:hover {
   outline: none;
   color: var(--color-attention-main);
 }
 
-.ec-textlink_underline span {
+.eui-textlink_underline span {
   border-bottom: var(--border-width-s) solid var(--color-link-main);
 }
 
-.ec-textlink_underline.active span,
-.ec-textlink_underline:focus span,
-.ec-textlink_underline:hover span {
+.eui-textlink_underline.active span,
+.eui-textlink_underline:focus span,
+.eui-textlink_underline:hover span {
   border-bottom: var(--border-width-s) solid var(--color-attention-main);
 }
