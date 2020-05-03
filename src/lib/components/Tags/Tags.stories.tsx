@@ -13,22 +13,58 @@ export default {
 };
 
 export const Default = () => (
-  <div style={{ marginBottom: 10 }}>
-    <Tags
-      list={[
-        { content: 'fruits', isCategory: true },
-        { content: 'banana' },
-        { content: 'yuogurt' },
-        { content: 'orange' },
-        { content: 'apple', onClick: item => alert(`item id = ${JSON.stringify(item)}`), options: { a: 'b' } },
-        { content: 'companies', isCategory: true },
-        { content: 'microsoft' },
-        { content: 'apple' },
-        { content: 'yandex' },
-        { content: 'facebook' },
-      ]}
-    />
-  </div>
+  <React.Fragment>
+    <div style={{ marginBottom: 10 }}>
+      <Tags
+        size="l"
+        list={[
+          { content: 'fruits', isCategory: true },
+          { content: 'banana' },
+          { content: 'yuogurt', isActive: true },
+          { content: 'orange' },
+          { content: 'apple', onClick: item => alert(`item id = ${JSON.stringify(item)}`), options: { a: 'b' } },
+          { content: 'companies', isCategory: true },
+          { content: 'microsoft' },
+          { content: 'apple' },
+          { content: 'yandex' },
+          { content: 'facebook' },
+        ]}
+      />
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Tags
+        list={[
+          { content: 'fruits', isCategory: true },
+          { content: 'banana' },
+          { content: 'yuogurt', isActive: true },
+          { content: 'orange' },
+          { content: 'apple', onClick: item => alert(`item id = ${JSON.stringify(item)}`), options: { a: 'b' } },
+          { content: 'companies', isCategory: true },
+          { content: 'microsoft' },
+          { content: 'apple' },
+          { content: 'yandex' },
+          { content: 'facebook' },
+        ]}
+      />
+    </div>
+    <div style={{ marginBottom: 10 }}>
+      <Tags
+        size="s"
+        list={[
+          { content: 'fruits', isCategory: true },
+          { content: 'banana' },
+          { content: 'yuogurt', isActive: true },
+          { content: 'orange' },
+          { content: 'apple', onClick: item => alert(`item id = ${JSON.stringify(item)}`), options: { a: 'b' } },
+          { content: 'companies', isCategory: true },
+          { content: 'microsoft' },
+          { content: 'apple' },
+          { content: 'yandex' },
+          { content: 'facebook' },
+        ]}
+      />
+    </div>
+  </React.Fragment>
 );
 
 export const RouterLink = () => (

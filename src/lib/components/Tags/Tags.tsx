@@ -6,6 +6,7 @@ import b_ from 'b_';
 import cn from 'classnames';
 
 import { RightArrowIcon } from '../../icons/RightArrowIcon';
+import { ButtonSize } from '../Button';
 
 const b = b_.lock('eui-tags');
 
@@ -14,19 +15,24 @@ type TagOptions = { [key: string]: any };
 interface Tag {
   content: React.ReactNode;
   isCategory?: boolean;
+  isActive?: boolean;
   onClick?: (options: TagOptions) => void;
   options?: TagOptions;
 }
 
 interface TagsProps {
+  size?: ButtonSize;
   list: Tag[];
 }
 
-export const Tags: React.FC<TagsProps> = ({ list }) => {
+export const Tags: React.FC<TagsProps> = ({ list, size }) => {
   return (
     <div className={b()}>
       {list.map((tag, index) => {
-        const tagInnerCls = cn(b('tag-inner', { category: tag.isCategory }), 'button-reset');
+        const tagInnerCls = cn(
+          b('tag-inner', { category: !!tag.isCategory, active: !!tag.isActive, size: size || 'm' }),
+          'button-reset',
+        );
 
         const onClick = () => {
           if (tag.onClick) {
