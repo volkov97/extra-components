@@ -17,6 +17,7 @@ export const Default = () => (
       <RadioButton
         size="l"
         activeId="a"
+        onChange={id => console.log(id)}
         options={[
           { id: 'a', title: 'a' },
           { id: 'b', title: 'b' },
@@ -27,6 +28,7 @@ export const Default = () => (
     <div style={{ marginBottom: 10 }}>
       <RadioButton
         activeId="b"
+        onChange={id => console.log(id)}
         options={[
           { id: 'a', title: 'a' },
           { id: 'b', title: 'b' },
@@ -38,6 +40,7 @@ export const Default = () => (
       <RadioButton
         size="s"
         activeId="c"
+        onChange={id => console.log(id)}
         options={[
           { id: 'a', title: 'a' },
           { id: 'b', title: 'b' },

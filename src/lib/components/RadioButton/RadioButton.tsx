@@ -12,6 +12,7 @@ const b = b_.lock('eui-radiobutton');
 interface RadioButtonProps {
   size?: ButtonSize;
   activeId: string;
+  onChange: (id: string) => void;
   options: {
     id: string;
     title: string;
@@ -34,7 +35,7 @@ function getButtonCorners(index: number, lastIndex: number) {
   return intermediateItemCorners;
 }
 
-export const RadioButton: React.FC<RadioButtonProps> = ({ activeId, options, size }) => {
+export const RadioButton: React.FC<RadioButtonProps> = ({ activeId, options, size, onChange }) => {
   const [activeItemIndex, setActiveItemIndex] = useState(options.findIndex(el => el.id === activeId));
 
   return (
@@ -49,7 +50,11 @@ export const RadioButton: React.FC<RadioButtonProps> = ({ activeId, options, siz
               theme={isActive ? 'active' : undefined}
               size={size || 'm'}
               corners={getButtonCorners(index, options.length - 1)}
-              onClick={() => setActiveItemIndex(index)}
+              onClick={() => {
+                setActiveItemIndex(index);
+
+                onChange(option.id);
+              }}
             >
               {option.title}
             </Button>
