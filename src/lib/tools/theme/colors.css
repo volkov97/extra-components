@@ -53,6 +53,7 @@
   --color-attention-dark: var(--color-red-dark);
   --color-border-main: var(--color-cloudy-blue);
   --color-border-dark: var(--color-steel);
+  --eui-control-main-color: var(--color-background-main-inverse);
 }
 
 :root.eui-theme-dark {
@@ -68,6 +69,7 @@
   --color-attention-dark: var(--color-red-dark);
   --color-border-main: var(--color-cloudy-blue);
   --color-border-dark: var(--color-steel);
+  --eui-control-main-color: var(--color-background-main);
 }
 
 :root.eui-theme-dark img {

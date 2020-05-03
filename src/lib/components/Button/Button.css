@@ -11,7 +11,7 @@
 .eui-button:focus,
 .eui-button:hover {
   outline: none;
-  border-color: var(--color-background-main-inverse);
+  border-color: var(--eui-control-main-color);
 }
 
 .eui-button_size_s {
@@ -34,8 +34,8 @@
 
 .eui-button_active {
   color: var(--color-text-main-inverse);
-  background-color: var(--color-background-main-inverse);
-  border: var(--border-width-s) solid var(--color-background-main-inverse);
+  background-color: var(--eui-control-main-color);
+  border: var(--border-width-s) solid var(--eui-control-main-color);
 }
 
 .eui-button_active:hover,

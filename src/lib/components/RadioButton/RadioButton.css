@@ -8,6 +8,7 @@
 }
 
 .eui-radiobutton__item:hover,
+.eui-radiobutton__item:focus-within,
 .eui-radiobutton__item_active {
   z-index: 100;
 }
@@ -15,5 +16,5 @@
 .eui-radiobutton .eui-button_active:hover,
 .eui-radiobutton .eui-button_active:focus {
   color: var(--color-text-main-inverse);
-  background-color: var(--color-background-main-inverse);
+  background-color: var(--eui-control-main-color);
 }

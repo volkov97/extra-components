@@ -29,17 +29,17 @@
 }
 
 .eui-tags__tag-inner_size_s {
-  height: var(--line-height-typo-xl);
+  height: calc(var(--line-height-typo-xl) + 2px);
   font-size: var(--size-typo-s);
 }
 
 .eui-tags__tag-inner_size_m {
-  height: var(--line-height-typo-xxl);
+  height: calc(var(--line-height-typo-xxl) + 2px);
   font-size: var(--size-typo-m);
 }
 
 .eui-tags__tag-inner_size_l {
-  height: var(--line-height-typo-xxxl);
+  height: calc(var(--line-height-typo-xxxl) + 2px);
   font-size: var(--size-typo-l);
 }
 
@@ -50,26 +50,26 @@
 .eui-tags__tag-inner:focus,
 .eui-tags__tag:hover .eui-tags__tag-inner,
 .eui-tags__tag:focus .eui-tags__tag-inner {
-  border: 1px solid var(--color-background-main-inverse);
+  border: 1px solid var(--eui-control-main-color);
 }
 
 .eui-tags__tag-inner_category {
-  background-color: var(--color-background-main-inverse);
+  background-color: var(--eui-control-main-color);
   color: var(--color-text-main-inverse);
-  border-color: var(--color-background-main-inverse);
+  border-color: var(--eui-control-main-color);
   transition: all 0.3s;
 }
 
 .eui-tags__tag-inner_active {
-  background-color: var(--color-background-main-inverse);
+  background-color: var(--eui-control-main-color);
   color: var(--color-text-main-inverse);
-  border-color: var(--color-background-main-inverse);
+  border-color: var(--eui-control-main-color);
 }
 
 .eui-tags__tag-inner_category:focus,
 .eui-tags__tag-inner_category:hover {
   background-color: var(--color-text-main-inverse);
-  color: var(--color-background-main-inverse);
+  color: var(--color-text-main);
 }
 
 .eui-tags__tag-inner svg {

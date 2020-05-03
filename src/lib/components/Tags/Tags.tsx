@@ -10,9 +10,9 @@ import { ButtonSize } from '../Button';
 
 const b = b_.lock('eui-tags');
 
-type TagOptions = { [key: string]: any };
+export type TagOptions = { [key: string]: any };
 
-interface Tag {
+export interface Tag {
   content: React.ReactNode;
   isCategory?: boolean;
   isActive?: boolean;
@@ -20,7 +20,7 @@ interface Tag {
   options?: TagOptions;
 }
 
-interface TagsProps {
+export interface TagsProps {
   size?: ButtonSize;
   list: Tag[];
 }
