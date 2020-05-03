@@ -87,3 +87,24 @@ export const RouterLink = () => (
     </div>
   </BrowserRouter>
 );
+
+export const FullWidth = () => (
+  <div style={{ marginBottom: 10, width: 200, border: '1px solid black' }}>
+    <Tags
+      size="s"
+      stretch={true}
+      list={[
+        { content: 'fruits', isCategory: true },
+        { content: 'banana' },
+        { content: 'yuogurt', isActive: true },
+        { content: 'orange' },
+        { content: 'apple', onClick: item => alert(`item id = ${JSON.stringify(item)}`), options: { a: 'b' } },
+        { content: 'companies', isCategory: true },
+        { content: 'microsoft' },
+        { content: 'apple' },
+        { content: 'yandex' },
+        { content: 'facebook' },
+      ]}
+    />
+  </div>
+);

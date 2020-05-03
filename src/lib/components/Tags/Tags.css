@@ -4,6 +4,11 @@
   margin-top: calc(var(--space-s) * -1);
 }
 
+.eui-tags_stretch {
+  margin-right: -10px;
+  justify-content: space-between;
+}
+
 .eui-tags__tag {
   display: inline-block;
   margin-top: var(--space-s);
@@ -13,6 +18,10 @@
 .eui-tags__tag:hover,
 .eui-tags__tag:focus {
   outline: none;
+}
+
+.eui-tags__tag_stretch {
+  flex-grow: 1;
 }
 
 .eui-tags__tag-inner {
@@ -26,6 +35,11 @@
   border: 1px solid var(--color-background-secondary);
   border-radius: var(--border-radius-s);
   -webkit-print-color-adjust: exact;
+}
+
+.eui-tags__tag-inner_stretch {
+  width: 100%;
+  justify-content: center;
 }
 
 .eui-tags__tag-inner_size_s {

@@ -22,15 +22,21 @@ export interface Tag {
 
 export interface TagsProps {
   size?: ButtonSize;
+  stretch?: boolean;
   list: Tag[];
 }
 
-export const Tags: React.FC<TagsProps> = ({ list, size }) => {
+export const Tags: React.FC<TagsProps> = ({ list, size, stretch }) => {
   return (
-    <div className={b()}>
+    <div className={b({ stretch: !!stretch })}>
       {list.map((tag, index) => {
         const tagInnerCls = cn(
-          b('tag-inner', { category: !!tag.isCategory, active: !!tag.isActive, size: size || 'm' }),
+          b('tag-inner', {
+            category: !!tag.isCategory,
+            active: !!tag.isActive,
+            size: size || 'm',
+            stretch: !!stretch,
+          }),
           'button-reset',
         );
 
@@ -54,14 +60,14 @@ export const Tags: React.FC<TagsProps> = ({ list, size }) => {
           );
 
           return childrenWithProps?.length === 1 ? (
-            <div key={index} className={b('tag')} onClick={onClick}>
+            <div key={index} className={b('tag', { stretch: !!stretch })} onClick={onClick}>
               {childrenWithProps[0]}
             </div>
           ) : null;
         }
 
         return (
-          <div key={index} className={b('tag')} onClick={onClick}>
+          <div key={index} className={b('tag', { stretch: !!stretch })} onClick={onClick}>
             <button className={tagInnerCls}>
               {tag.content}
 
