@@ -44,7 +44,7 @@
 :root.eui-theme-light {
   --color-background-main: var(--color-white);
   --color-background-main-inverse: var(--color-black);
-  --color-background-secondary: #d5e4ea;
+  --color-background-secondary: #e9f1f4;
   --color-text-main: var(--color-black);
   --color-text-main-inverse: var(--color-white);
   --color-text-highlight: #fbe384;
